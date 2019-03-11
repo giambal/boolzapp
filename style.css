@@ -1,0 +1,149 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background-color:#dfdfdf;
+}
+
+.green-bar-background{
+  height:150px;
+  width: 100vw;
+  max-width: 100%;
+  background-color: #009688;
+  position: fixed;
+}
+
+.app-container{
+  width: 90vw;
+  height: 90vh;
+  margin: auto;
+  z-index: 100;
+  margin-top: 5vh;
+  display: flex;
+}
+
+.contacts-container{
+  width: 30%;
+  height: 100%;
+  background-color:#FAFAFA;
+  border-right: 1px solid grey;
+}
+
+.chat-container{
+  width: 70%;
+  height: 100%;
+  background-color: pink;
+}
+
+.general-gray{
+  width:100%;
+  background-color:#FAFAFA;
+}
+
+.chat-preview{
+  height: 60px;
+  border-bottom: 1px solid #cecece;
+  padding: 5px;
+  display: flex;
+}
+
+.my{
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #cecece;
+  padding: 5px;
+}
+
+.chat-preview img,
+.my img{
+  max-height: 90%;
+  border-radius: 50%;
+}
+
+.my-profile-right-part .fas ,
+.my-profile-right-part .far{
+  font-size: 25px;
+  color: grey;
+  margin-left: 5px;
+}
+
+.notification{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items:center;
+  background-color: skyblue;
+  padding: 10px;
+}
+
+.notification .fas{
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.notifiche-text{
+  margin-left: 20px;
+  width: 270px;
+}
+
+.notifiche-text p ,
+.chat-preview p{
+  font-size: 10px;
+  color: grey;
+}
+
+.fa-check{
+  font-size: 10px;
+  color: grey;
+  display: none;
+}
+
+.notifiche-text h6{
+  font-size: 12px;
+}
+
+.hourCheck{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chat-preview:hover .fas{
+  display: inline-block;
+}
+
+.chat-preview:hover{
+  background-color: #EAEAEA;
+}
+
+/* SEARCH BAR */
+
+.search-bar{
+  display: flex;
+  align-items: center;
+  height: 60px;
+  border-bottom: 1px solid #cecece;
+  padding: 5px;
+}
+
+#search{
+  height: 50%;
+  width: 85%;
+  border-radius: 15px;
+}
+
+#search-btn{
+  width:8%;
+  height: 50%;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content:  center;
+}
