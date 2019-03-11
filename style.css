@@ -19,11 +19,12 @@ body{
 
 .app-container{
   width: 90vw;
-  height: 90vh;
+  height: 95vh;
   margin: auto;
   z-index: 100;
-  margin-top: 5vh;
+  margin-top: 2vh;
   display: flex;
+  box-shadow: 0 2px 3px 0 dimgray;
 }
 
 .contacts-container{
@@ -36,7 +37,6 @@ body{
 .chat-container{
   width: 70%;
   height: 100%;
-  background-color: pink;
 }
 
 .general-gray{
@@ -136,6 +136,7 @@ body{
   height: 50%;
   width: 85%;
   border-radius: 15px;
+  border: 1px solid dimgray;
 }
 
 #search-btn{
@@ -146,4 +147,102 @@ body{
   display: flex;
   align-items: center;
   justify-content:  center;
+}
+
+/* CHAT SECTION */
+
+.chat-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:69.5px;
+  padding: 5px;
+}
+
+.chat-title-left-part{
+  height:100%;
+  display: flex;
+  align-items: center;
+}
+
+.chat-title img{
+  max-height: 90%;
+  border-radius: 50%;
+}
+
+.msg-section{
+  background-image: url("img/msg-background.jpg");
+}
+
+.msg-section{
+  height: calc(100% - 140.5px);
+  background-image: url("img/msg-background.jpg");
+  width: 100%;
+}
+
+.msg-input{
+  height: 70px;
+  background-color: #dadada;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#msg-input-box{
+  width: 80%;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  padding:10px;
+}
+
+.msg-input .far,
+.msg-input .fas{
+  font-size: 25px;
+  color: gray;
+}
+
+/* MESSAGGI */
+
+.msg-section{
+  padding: 30px;
+}
+
+.msg-row{
+  clear: both;
+}
+
+.msg{
+  max-width: 30%;
+  max-height: 250px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 0;
+  margin-top: 20px;
+  padding: 6px 7px 8px 9px;
+  color: #262626;
+}
+
+.received{
+  float: left;
+  background-color: white;
+}
+
+.sent{
+  float: right;
+  background-color: #dcf8e6;
+}
+
+.msg-hourCheck{
+  font-size: 10px;
+  color: grey;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.msg-hourCheck .fas{
+  padding-right: 10px;
+}
+
+.msg:hover .fas{
+  display: inline-block;
 }
