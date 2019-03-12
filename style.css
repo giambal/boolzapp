@@ -143,10 +143,11 @@ body{
   width:8%;
   height: 50%;
   border: 1px solid #cecece;
-  border-radius: 5px;
+  border-radius: 20%;
   display: flex;
   align-items: center;
   justify-content:  center;
+  margin-left: 5px;
 }
 
 /* CHAT SECTION */
@@ -171,13 +172,10 @@ body{
 }
 
 .msg-section{
-  background-image: url("img/msg-background.jpg");
-}
-
-.msg-section{
   height: calc(100% - 140.5px);
   background-image: url("img/msg-background.jpg");
   width: 100%;
+  overflow: auto;
 }
 
 .msg-input{
@@ -220,6 +218,7 @@ body{
   margin-top: 20px;
   padding: 6px 7px 8px 9px;
   color: #262626;
+  min-width: 8%;
 }
 
 .received{
@@ -245,4 +244,8 @@ body{
 
 .msg:hover .fas{
   display: inline-block;
+}
+
+.hidden{
+  display: none;
 }
