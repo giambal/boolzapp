@@ -37,103 +37,296 @@
           </div>
         </div>
         <!-- chat preview list -->
+        <div class="chat-preview-container">
 
-        <div class="chat-preview general-gray toHide">
-          <img src="img/trump.jpg" alt="">
-          <div class="notifiche-text">
-            <h6 class="name">Donald Trump</h6>
-            <p>Bella zio! Stasera da me.</p>
-          </div>
-          <div class="hourCheck">
-            <p>20:40</p>
-            <i class="fas fa-check"></i>
-          </div>
-        </div>
-        <div class="chat-preview general-gray toHide">
-          <img src="img/salvini.jpg" alt="">
-          <div class="notifiche-text">
-            <h6 class="name">Matteo Salvini</h6>
-            <p>Ci sei stasera?</p>
-          </div>
-          <div class="hourCheck">
-            <p>17:35</p>
-            <i class="fas fa-check"></i>
-          </div>
-        </div>
-        <div class="chat-preview general-gray toHide">
-          <img src="img/elon.jpg" alt="">
-          <div class="notifiche-text">
-            <h6 class="name">Elon Musk</h6>
-            <p>Come stai?</p>
-          </div>
-          <div class="hourCheck">
-            <p>13:50</p>
-            <i class="fas fa-check"></i>
-          </div>
-        </div>
-        <div class="chat-preview general-gray toHide">
-          <img src="img/silvio.jpg" alt="">
-          <div class="notifiche-text">
-            <h6 class="name">Silvio</h6>
-            <p>Tornerò</p>
-          </div>
-          <div class="hourCheck">
-            <p>2 anni fa</p>
-            <i class="fas fa-check"></i>
-          </div>
-        </div>
-        <div class="chat-preview general-gray toHide">
-          <img src="img/regina.jpg" alt="">
-          <div class="notifiche-text">
-            <h6 class="name">Regina Elisabetta</h6>
-            <p>Non mi sento bene...</p>
-          </div>
-          <div class="hourCheck">
-            <p>750 anni fa...</p>
-            <i class="fas fa-check"></i>
-          </div>
-        </div>
-      </div>
-      <div class="chat-container">
-        <div class="chat-title general-gray">
-          <div class="chat-title-left-part">
+          <div class="chat-preview general-gray toHide change">
             <img src="img/trump.jpg" alt="">
             <div class="notifiche-text">
-              <h6>Donald Trump</h6>
-              <p>Ultimo accesso alle ore 20:45</p>
+              <h6 class="name">Donald Trump</h6>
+              <p>Bella zio! Stasera da me.</p>
+            </div>
+            <div class="hourCheck">
+              <p>20:40</p>
+              <i class="fas fa-check"></i>
             </div>
           </div>
-          <div class="my-profile-right-part">
-            <i class="far fa-user-circle"></i>
-            <i class="fas fa-comment-alt"></i>
-            <i class="fas fa-ellipsis-v"></i>
+          <div class="chat-preview general-gray toHide change">
+            <img src="img/salvini.jpg" alt="">
+            <div class="notifiche-text">
+              <h6 class="name">Matteo Salvini</h6>
+              <p>Ci sei stasera?</p>
+            </div>
+            <div class="hourCheck">
+              <p>17:35</p>
+              <i class="fas fa-check"></i>
+            </div>
+          </div>
+          <div class="chat-preview general-gray toHide change">
+            <img src="img/elon.jpg" alt="">
+            <div class="notifiche-text">
+              <h6 class="name">Elon Musk</h6>
+              <p>Come stai?</p>
+            </div>
+            <div class="hourCheck">
+              <p>13:50</p>
+              <i class="fas fa-check"></i>
+            </div>
+          </div>
+          <div class="chat-preview general-gray toHide change">
+            <img src="img/silvio.jpg" alt="">
+            <div class="notifiche-text">
+              <h6 class="name">Silvio</h6>
+              <p>Tornerò</p>
+            </div>
+            <div class="hourCheck">
+              <p>2 anni fa</p>
+              <i class="fas fa-check"></i>
+            </div>
+          </div>
+          <div class="chat-preview general-gray toHide change">
+            <img src="img/regina.jpg" alt="">
+            <div class="notifiche-text">
+              <h6 class="name">Regina Elisabetta</h6>
+              <p>Non mi sento bene...</p>
+            </div>
+            <div class="hourCheck">
+              <p>750 anni fa...</p>
+              <i class="fas fa-check"></i>
+            </div>
           </div>
         </div>
-        <div class="msg-section">
-          <div class="msg-row">
-            <div class="msg received">
-              <p class="msg-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint o</p>
-              <div class="msg-hourCheck">
-                <i class="fas fa-check"></i>
-                <p>12:25</p>
+        </div>
+
+      <!-- CHAT CONTAINER -->
+
+      <div class="chat-container">
+
+        <!-- PRIMA SEZIONE DELLA CHAT TRUMP -->
+        <div class="chat-sub-container active">
+
+          <div class="chat-title general-gray">
+            <div class="chat-title-left-part">
+              <img src="img/trump.jpg" alt="">
+              <div class="notifiche-text">
+                <h6>Donald Trump</h6>
+                <p>Ultimo accesso alle ore 20:45</p>
+              </div>
+            </div>
+            <div class="my-profile-right-part">
+              <i class="far fa-user-circle"></i>
+              <i class="fas fa-comment-alt"></i>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+
+          <div class="msg-section">
+            <div class="msg-row">
+              <div class="msg received selected">
+                <p class="msg-text">come stai?</p>
+                <div class="msg-hourCheck">
+                  <i class="fas fa-check"></i>
+                  <p>12:25</p>
+                </div>
+                <div class="info">
+                  <p>message info</p>
+                  <p class="canc">delete message</p>
+                </div>
+              </div>
+            </div>
+            <div class="msg-row">
+              <div class="msg sent">
+                <p class="msg-text">bene tu?</p>
+                <div class="msg-hourCheck">
+                  <i class="fas fa-check"></i>
+                  <p>12:25</p>
+                </div>
+                <div class="info">
+                  <p>message info</p>
+                  <p class="canc">delete message</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SECONDA SEZIONE DELLA CHAT SALVINI-->
+
+        <div class="chat-sub-container">
+
+          <div class="chat-title general-gray">
+            <div class="chat-title-left-part">
+              <img src="img/salvini.jpg" alt="">
+              <div class="notifiche-text">
+                <h6>Matteo Salvini</h6>
+                <p>Ultimo accesso alle ore 15:35</p>
+              </div>
+            </div>
+            <div class="my-profile-right-part">
+              <i class="far fa-user-circle"></i>
+              <i class="fas fa-comment-alt"></i>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+
+          <div class="msg-section">
+            <div class="msg-row">
+              <div class="msg received">
+                <p class="msg-text">Il verde è il mio colore preferito</p>
+                <div class="msg-hourCheck">
+                  <i class="fas fa-check"></i>
+                  <p>20:54</p>
+                </div>
+              </div>
+            </div>
+            <div class="msg-row">
+              <div class="msg sent">
+                <p class="msg-text">il mio il nero</p>
+                <div class="msg-hourCheck">
+                  <i class="fas fa-check"></i>
+                  <p>12:25</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="msg-row">
-            <div class="msg sent">
-              <p class="msg-text">ciao cioaoefnhp woenfp  owbefpè weèf</p>
-              <div class="msg-hourCheck">
-                <i class="fas fa-check"></i>
-                <p>12:25</p>
+
+        </div>
+
+        <!-- TERZA SEZIONE DELLA CHAT ELON -->
+
+        <div class="chat-sub-container">
+
+          <div class="chat-title general-gray">
+            <div class="chat-title-left-part">
+              <img src="img/elon.jpg" alt="">
+              <div class="notifiche-text">
+                <h6>Elon Musk</h6>
+                <p>Ultimo accesso alle ore 12:30</p>
+              </div>
+            </div>
+            <div class="my-profile-right-part">
+              <i class="far fa-user-circle"></i>
+              <i class="fas fa-comment-alt"></i>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+
+          <div class="msg-section">
+            <div class="msg-row">
+              <div class="msg received">
+                <p class="msg-text">Ho bisogno di un prestito</p>
+                <div class="msg-hourCheck">
+                  <i class="fas fa-check"></i>
+                  <p>12:30</p>
+                </div>
+              </div>
+            </div>
+            <div class="msg-row">
+              <div class="msg sent">
+                <p class="msg-text">non ho soldi</p>
+                <div class="msg-hourCheck">
+                  <i class="fas fa-check"></i>
+                  <p>12:30</p>
+                </div>
               </div>
             </div>
           </div>
+
         </div>
+
+        <!-- QUARTA SEZIONE DELLA CHAT SILVIO-->
+
+        <div class="chat-sub-container">
+
+          <div class="chat-title general-gray">
+            <div class="chat-title-left-part">
+              <img src="img/silvio.jpg" alt="">
+              <div class="notifiche-text">
+                <h6>Silvio</h6>
+                <p>Ultimo accesso alle ore 09:17</p>
+              </div>
+            </div>
+            <div class="my-profile-right-part">
+              <i class="far fa-user-circle"></i>
+              <i class="fas fa-comment-alt"></i>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+
+          <div class="msg-section">
+            <div class="msg-row">
+              <div class="msg received">
+                <p class="msg-text">Mi consenta!!</p>
+                <div class="msg-hourCheck">
+                  <i class="fas fa-check"></i>
+                  <p>09:17</p>
+                </div>
+              </div>
+            </div>
+            <div class="msg-row">
+              <div class="msg sent">
+                <p class="msg-text">Siete solo dei poveri comunisti</p>
+                <div class="msg-hourCheck">
+                  <i class="fas fa-check"></i>
+                  <p>09:17</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- QUINTA SEZIONE DELLA CHAT REGINA-->
+        <div class="chat-sub-container">
+
+          <div class="chat-title general-gray">
+            <div class="chat-title-left-part">
+              <img src="img/regina.jpg" alt="">
+              <div class="notifiche-text">
+                <h6>Regina Elisabetta</h6>
+                <p>Ultimo accesso alle ore 2 ore fa</p>
+              </div>
+            </div>
+            <div class="my-profile-right-part">
+              <i class="far fa-user-circle"></i>
+              <i class="fas fa-comment-alt"></i>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+
+          <div class="msg-section">
+            <div class="msg-row">
+              <div class="msg received">
+                <p class="msg-text">Moriro presto</p>
+                <div class="msg-hourCheck">
+                  <i class="fas fa-check"></i>
+                  <p>08:15</p>
+                </div>
+              </div>
+            </div>
+            <div class="msg-row">
+              <div class="msg sent">
+                <p class="msg-text">non dica cosi</p>
+                <div class="msg-hourCheck">
+                  <i class="fas fa-check"></i>
+                  <p>08:15</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- INPUT MESSAGGIO -->
         <div class="msg-input">
           <i class="far fa-smile"></i>
           <input id="msg-input-box" type="text" value="" name="" placeholder="scrivi un messaggio">
           <i class="fas fa-microphone"></i>
         </div>
+
+
       </div>
     </div>
     </div>

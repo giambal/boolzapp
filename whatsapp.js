@@ -30,12 +30,27 @@ function addMsg(content) {
   var ora=document.createElement("p");
   ora=today.getHours()+ ":"+ today.getMinutes();
 
+  var info=document.createElement("div");
+  $(info).addClass("info");
+
+  var messageInfo=document.createElement("p");
+  $(messageInfo).text("Message info");
+
+  var deleteMessage=document.createElement("p");
+  $(deleteMessage).text("Delete message");
+  $(deleteMessage).addClass("canc");
+
+
+
   msgHourCont.append(check);
   msgHourCont.append(ora);
+  info.append(messageInfo);
+  info.append(deleteMessage);
   msg.append(msgText);
   msg.append(msgHourCont);
+  msg.append(info);
   msgRow.append(msg);
-  $(".msg-section").append(msgRow);
+  $(".active .msg-section").append(msgRow);
 }
 
 // --------CREAZIONE MESSAGGIO RICEVUTO-----
@@ -64,20 +79,34 @@ function msgReply(risposta) {
   var ora=document.createElement("p");
   ora=today.getHours()+ ":"+ today.getMinutes();
 
+  var info=document.createElement("div");
+  $(info).addClass("info");
+
+  var messageInfo=document.createElement("p");
+  $(messageInfo).text("Message info");
+
+  var deleteMessage=document.createElement("p");
+  $(deleteMessage).text("Delete message");
+  $(deleteMessage).addClass("canc");
+
+
   msgHourCont.append(check);
   msgHourCont.append(ora);
+  info.append(messageInfo);
+  info.append(deleteMessage);
   msg.append(msgText);
   msg.append(msgHourCont);
+  msg.append(info);
   msgRow.append(msg);
-  $(".msg-section").append(msgRow);
+  $(".active .msg-section").append(msgRow);
 }
 
 // -----FUNZIONE FRASE RANDOM------
 
 function reply() {
 
-  var array=["ciao come stai?" , "stasera calcetto" , "ti va di uscire?" , "birretta?", "ci vediamo domani"];
-  var rnd=getRandom(0,4)
+  var array=["ciao come stai?" , "stasera calcetto" , "ti va di uscire?" , "birretta?", "ci vediamo domani", "grazie", "non sono d'accordo", "ok ciccio", "elisabetta regna","a dopo", "bene", "come va il lavoro?"];
+  var rnd=getRandom(0,11)
   for (var i = 0; i < array.length; i++) {
 
     var risposta=array[rnd];
@@ -139,6 +168,37 @@ function searchFun() {
   }
 }
 
+// -------FUNZIONE CHAT CHANGE-------
+
+function contactClick() {
+
+  var me=$(this);
+  var meIndex=me.index();
+
+  var chatActive=$(".active");
+  chatActive.removeClass("active");
+
+  var chat=$(".chat-sub-container");
+  var selectedChat=chat.eq(meIndex);
+
+  selectedChat.addClass("active");
+
+}
+
+// FUNZIONE PER CREARE MENU A TENDINA
+
+function menuAppear() {
+
+}
+
+// ---Funzione per cancellare riga--
+
+function rowCanc() {
+  var me=$(this);
+  var msg=me.parent();
+  msg.remove();
+}
+
 // -------INIT-------
 
 function init() {
@@ -152,6 +212,11 @@ function init() {
 
   var search=$("#search");
   search.keyup(searchFun);
+
+  var persona=$(".change");
+  persona.click(contactClick);
+
+  $(document).on("click",".canc", rowCanc);
 }
 
 

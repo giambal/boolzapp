@@ -120,6 +120,7 @@ body{
 
 .chat-preview:hover{
   background-color: #EAEAEA;
+  cursor: pointer;
 }
 
 /* SEARCH BAR */
@@ -156,7 +157,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height:69.5px;
+  height:69px;
   padding: 5px;
 }
 
@@ -172,7 +173,7 @@ body{
 }
 
 .msg-section{
-  height: calc(100% - 140.5px);
+  height: calc(100% - 69px);
   background-image: url("img/msg-background.jpg");
   width: 100%;
   overflow: auto;
@@ -203,7 +204,7 @@ body{
 /* MESSAGGI */
 
 .msg-section{
-  padding: 30px;
+  padding: 50px;
 }
 
 .msg-row{
@@ -219,6 +220,7 @@ body{
   padding: 6px 7px 8px 9px;
   color: #262626;
   min-width: 8%;
+  position: relative;
 }
 
 .received{
@@ -236,6 +238,7 @@ body{
   color: grey;
   display: flex;
   justify-content: flex-end;
+  padding-top: 5px;
 }
 
 .msg-hourCheck .fas{
@@ -248,4 +251,47 @@ body{
 
 .hidden{
   display: none;
+}
+
+.chat-sub-container{
+  height: calc(100% - 70.5px);
+  display:none;
+}
+
+.active{
+
+  display: block;
+}
+
+/* MENU A TENDINA */
+
+.info{
+  position:absolute;
+  top: 45px;
+  right: 2px;
+  width: 130px;
+  z-index: 101;
+  background-color: #fafafa;
+  border: 1px solid gray;
+  border-radius: 5px;
+
+}
+
+.info > p{
+  padding: 3px;
+  font-size: 15px;
+}
+
+.info>p:first-child{
+  border-bottom: 1px solid gray;
+}
+
+.info> p:hover {
+  background-color: #dedede;
+  border-radius: 5px;
+  cursor:pointer;
+}
+
+.msg-hourCheck > .fa-check{
+  cursor: pointer;
 }
