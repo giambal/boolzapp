@@ -105,7 +105,7 @@ function msgReply(risposta) {
 
 function reply() {
 
-  var array=["ciao come stai?" , "stasera calcetto" , "ti va di uscire?" , "birretta?", "ci vediamo domani", "grazie", "non sono d'accordo", "ok ciccio", "elisabetta regna","a dopo", "bene", "come va il lavoro?"];
+  var array=["ciao come stai?" , "stasera calcetto" , "ti va di uscire?" , "ci vediamo domani", "grazie", "non sono d'accordo", "a dopo", "bene", "come va il lavoro?"];
   var rnd=getRandom(0,11)
   for (var i = 0; i < array.length; i++) {
 
